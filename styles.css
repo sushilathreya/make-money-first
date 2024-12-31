@@ -1,0 +1,53 @@
+/* Set the font family to Inter */
+body, div, p, button {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Style for the modal close button */
+  #closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: black; /* Set close button color to black */
+    cursor: pointer;
+  }
+  
+  /* Additional modal styling (optional) */
+  #scrollModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  
+  #scrollModal div {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  #ctaButton {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#headerImage {
+    width: 100%;
+}
+  

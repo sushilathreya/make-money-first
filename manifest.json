@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Make Money First",
+    "version": "1.0",
+    "description": "Discourages excessive scrolling on Twitter by reminding you with a popup.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://x.com/home"],
+    "content_scripts": [
+      {
+        "matches": ["https://x.com/home","https://www.linkedin.com/feed/",
+        "https://www.instagram.com/"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+    {
+      "resources": ["dopamine.png", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+  }
+  
